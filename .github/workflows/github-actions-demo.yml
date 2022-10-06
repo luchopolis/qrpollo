@@ -21,5 +21,6 @@ jobs:
             git checkout master &&
             git fetch --all &&
             git pull origin master &&
-            node -v
+            npm install &&
+            npm run prod
           '
