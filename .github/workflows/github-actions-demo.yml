@@ -21,7 +21,5 @@ jobs:
             git checkout master &&
             git fetch --all &&
             git pull origin master &&
-            echo "hola" > hola.txt &&
-            npm install &&
-            npm run prod
+            node -v
           '
