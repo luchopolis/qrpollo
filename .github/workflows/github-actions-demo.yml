@@ -22,5 +22,5 @@ jobs:
             git fetch --all &&
             git pull origin master &&
             npm install &&
-            npm run prod &
+            pm2 stop myprocess; pm2 start myprocess.js
           '
