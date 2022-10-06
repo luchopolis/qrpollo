@@ -16,11 +16,3 @@ jobs:
           TARGET: ${{ secrets.TARGET_DIR }}
         run:  |
           echo "$SSH_PRIVATE_KEY" > private_key && chmod 600 private_key
-          ssh -o StrictHostKeyChecking=no -i private_key ${REMOTE_USER}@${REMOTE_HOST} '
-            cd /home/ubuntu/qrpollo &&
-            git checkout master &&
-            git fetch --all &&
-            git pull origin master &&
-            npm install &&
-            npm run prod
-          '
