@@ -8,7 +8,7 @@ morgan('dev')
 // env
 const { PORT } = require('./config')
 
-app.use('/qrcode',codeRoute)
+app.use('/qrcode-temp',codeRoute)
 
 
 app.listen(PORT, () => {
