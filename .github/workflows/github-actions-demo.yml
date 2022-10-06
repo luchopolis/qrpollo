@@ -22,5 +22,5 @@ jobs:
             git fetch --all &&
             git pull origin master &&
             npm install &&
-            npm run prod & npx wait-on http://localhost:3000
+            npm run prod &
           '
